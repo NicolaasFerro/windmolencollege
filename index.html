@@ -3,7 +3,13 @@
 WindmolenCollege
 </title>
 
- <style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+
+<style>
+.mySlides {display:none;}
 #sitem {width:1400px; height:6000px}
 	 
 #tepe {background-color:white; width:1400px;height:45px;position:fixed; top:1px; z-index:5;} 
@@ -55,7 +61,7 @@ border:2px rgb(0, 10, 100); font-family:sans-serif; color:white; font-weight:bol
 .haberfoto {position:relative; width:120px; height:80px; margin:5px; float:left;}	
 
 
-</style>
+</style></head>
 
 	
 
@@ -77,8 +83,32 @@ border:2px rgb(0, 10, 100); font-family:sans-serif; color:white; font-weight:bol
  <img id="logo" src="https://static.wixstatic.com/media/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.jpg/v1/fill/w_142,h_80,al_c,q_80,usm_0.66_1.00_0.01/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.webp";>
  <img id="logo2" src="https://static.wixstatic.com/media/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.jpg/v1/fill/w_142,h_80,al_c,q_80,usm_0.66_1.00_0.01/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.webp";>
 
-<div id="kayan"><img style="width:1400px; height:auto;" src="http://resimdiyari.com/_data/i/upload/2012/10/14/20121014182832-c7880087-me.jpg"> 
- 
+<div class="w3-content w3-section" id="kayan">
+
+  <img style="width:1400px; height:auto;" src="http://resimdiyari.com/_data/i/upload/2012/10/14/20121014182832-c7880087-me.jpg"> 
+  <img style="width:1400px; height:auto;" src="img_la.jpg">
+  <img style="width:1400px; height:auto;" src="img_ny.jpg">
+  <img style="width:1400px; height:auto;" src="img_chicago.jpg">
+</div>
+
+	    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+	
+	
   <div><a id="title"> Windmolen </a></div><div><a id="title2"> Een Platform voor Nieuwkomers in Nederland </a> </div>
 </div>
 	    

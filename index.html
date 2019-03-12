@@ -4,8 +4,12 @@ WindmolenCollege
 </title>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
+        .mySlides {display:none;}
 
 #sitem {width:1400px; height:6000px}
 	 
@@ -88,16 +92,38 @@ border:2px rgb(0, 10, 100); font-family:sans-serif; color:white; font-weight:bol
           <div><a id="title2"> Een Platform voor Nieuwkomers in Nederland </a> </div>
 	  </div>
 	    
- <h2 id="editor">
-	Dear Visitors! <br>
-	Welcome to our site. In this site you will find useful information that may help you at developing your language level in Dutch. Furthermore you can find tips and advices regarding life in Nederland. Besides them, we select some news from Nederland’s main pres. We hope you enjoy the site.<br>
-	<br> <strong> Why Windmolen? </strong><br>
-	It means windmill in Dutch. It is one of the symbols of Nederland. It is used to transfer the water between chanals. It is a symbol of environmentally friendly energy. It reminds nature and clean air. :)It has a bold and innocent stance against Don Quixote.
-	<a class="land"> Read more. <br></a>
+ <div id="editor">
+	 <div class="baslik"><a href="">Over Nederland</a></div>
+	 <div>
+	
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="http://resimdiyari.com/_data/i/upload/2012/10/14/20121014182832-c7880087-me.jpg" style="width:100%">
+  <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o3.jpg" style="width:100%;">
+  <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o6.jpg" style="width:100%">
+  <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o1.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+		 
+	 </div>
   
    
-    <img style="width:150px; height:auto" src="https://static.wixstatic.com/media/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.jpg/v1/fill/w_142,h_80,al_c,q_80,usm_0.66_1.00_0.01/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.webp";>
-</h2>
+    
 
 
  <div style="clear:both;">

@@ -21,6 +21,7 @@ WindmolenCollege
 
 #editor {border:1px solid blue; text-align:center; font-family:calibri light; font-size:18px; position:relative; overflow:hidden; float:left;
 	width:34%; height:378px; margin:45px 2px 1px 1px;  padding:0px; line-height:1.2em; overflow-y:auto;}
+#demo {background-color:lightgreen; width:1200px; height:25px; position:relative; font-family:calibri light; font-size:18px; font-weight:bold; }
 
 #overons {border:1px solid blue; position:relative; float:left; width:620px; height:280px; margin:2px; padding:10px; line-height:1.5em; overflow-y:auto;}
 
@@ -122,6 +123,12 @@ function carousel() {
 }
 </script>
 		 
+ <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML ="Vandaag: "+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear()+"    Tijd:     "+d.getHours()+":"+d.getMinutes();
+</script>
 	 
   
    

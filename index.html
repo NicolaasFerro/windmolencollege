@@ -1,371 +1,637 @@
+*{
+  box-sizing: border-box;
+}
+
+header {
+  position:fixed;
+  background-color:white;
+  width:100%;
+  top:0px;
+  z-index:5;
+}
+
+h1 {
+  font-family:Monotype Corsiva;
+  font-style:italic;
+  font-size:25px;
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin:0px;
+  padding:0px;
+}
+
+#menu {
+  background-color:red;
+  height:50px;
+  padding: 0px;
+}
+
+#innermenu {
+  margin: 0px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.menu-item {
+  padding-top: 15px;
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  
+  margin: 0px 5px 0px 0px;
+  width: 150px;
+}
+
+.menu-item a{
+  color:white;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color:rgb(255,128,0);
+}
+
+#logo {
+  position:absolute; width:120px; top:9px; left:10px;
+}
+
+#logo-letters {
+  position:absolute; width:35px; top:53px; left:44px; border-radius:50%;
+}
+
+#Home {
+  with:100%;
+  margin: 50px 5px 5px 0px;
+  padding:120px 0px 0px 0px;
+}
+
+.fotoblok {
+  width:100%; 
+  height:400px;
+  margin: 0px auto 0px auto;
+  overflow-y:hidden;
+}
+
+#topfoto {
+  display:block;
+  width:100%;
+  height:auto;
+  margin:-200px 0px 0px 0px;
+}
+
+.subtitel {
+  position: absolute;
+  background-color:rgb(0,0,180);
+  color:white;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size:20px;
+  height: 40px;
+  padding:10px 10px 2px 10px;
+  margin:20px 0px 0px 0px;
+  z-index:2;
+  border-radius:5%;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.toptitle {
+  position:absolute;
+  top:150px;
+  right:40px;
+  color:white;
+  font-size:60px;
+  text-align:right;
+  font-weight:bold;
+  text-shadow:3px 2px 1px #000;
+}
+
+.artikelcel {
+  font-size:20px;
+  width:100%;
+  max-width:800px;
+  margin: 0px auto 100px auto;
+  text-align:left;
+}
+
+#highlight {
+  width:400px; 
+  height:250px;
+  margin-left:100px; 
+  padding:20px; 
+  font-weight:bold; 
+  font-size:20px; 
+  font-family:sans-serif;
+  line-height:35px; 
+  border-left:10px solid blue;
+}
+
+.container{
+  min-height: 80vh;
+  border-top: 2px solid purple;
+  width:100%;
+  overflow-y: auto;
+  position: relative;
+  padding: 150px 0px 10px 0px;
+}
+
+.col3{
+  width: 30%;
+  margin: 20px 1%;
+  overflow: auto;
+  padding: 25px;
+  font-size: 20px;
+  float: left;
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid #000;
+}
+
+.col2 {
+  width:45%;
+  height:750px;
+  margin:20px 1% 10px 1%;
+  padding:25px;
+  font-size:20px;
+  float:left;
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid #000;
+  overflow-y:auto;
+}
+
+.sub-container{
+  margin-top: 50px;
+  padding: 0 1.5%;
+}
+
+.fotohub {
+  width:100%;
+  height:300px;
+  overflow:hidden;
+ }
+.fotohub-n {
+  width:100%;
+  height:220px;
+  overflow:hidden;
+}
+.newsfoto {
+  width:100%;
+  height:auto; 
+  position:relative;
+}
+.newsfoto:hover {
+  margin-left: -5%;
+  margin-top: -5%;
+  margin-right:-5%;
+  margin-bottom:-5%;
+  width:110%;
+}
+
+h4 {
+  margin:0px auto;
+}
+
+.videoblok {
+  margin:10px 10px 25px 5px;
+  width:95%;
+  height:240px;
+  position:relative;
+}
+
+
+.tip-box {
+  margin-top:5px;
+  padding:5px;
+  border-radius:5px;
+  border:1px solid rgb(0,102,55);
+}
+
+.tipfoto {
+  width:30%;
+  margin:0px;  
+  position:relative;
+}
+
+#sub-overons {
+  width:100%;
+  max-width:600px;
+  margin-top:70px;
+  margin-right:auto;
+  margin-left:auto;
+  background-color:rgb(150,190,160);
+  padding:50px;
+  border-radius:2%;
+  font-size:20px;
+  position:relative;
+}
+
+footer {
+  height:360px;
+  background-color:black;
+  padding:20px 0px;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+.footer-sub{
+  width: 48%;
+  margin: 0px;
+  position:relative;
+  float:left;
+  background-color:black;
+  padding:0px 20px;
+}
+
+#deco-non a{
+  text-decoration: none;
+  color:white;
+}
+
+th, td {
+  padding:10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .col-small{
+   margin-top: 5px;
+   width: 100%;
+  }
+  .menu-item {
+    height: 50px;
+    font-size: 10px;
+    width: 50px;
+    margin: 0px;
+   }
+  #innermenu {
+    width: 100%;
+    margin: 0px;
+   }
+  .toptitle {
+    font-size: 25px;
+    top: 200px;
+  }
+  .fotoblok {
+    height:auto;
+  }
+  #topfoto {
+    margin:0px 0px 0px 0px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #logo {
+    width:70px; 
+    top:5px; 
+    left:5px;
+  }
+  #logo-letters {
+    width:20px; top:31px; left:25px; 
+  }
+  #highlight {
+    margin-left:20px; 
+    width:300px; 
+    line-height:28px; 
+    padding:10px;
+  }
+  .footer-sub{
+  width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:601px) {
+ .col-small{
+   width: 48%;
+ }
+ .fotoblok {
+    height:auto;
+ }
+ .menu-item {
+   padding-top: 16px;
+   height: 50px;
+   font-size: 18px;
+   width: 80px;
+ }
+ #innermenu {
+   width: 100%;
+   margin: 0px;
+   }
+}
+<!DOCTYPE html>
 <html>
-<title>
-Nieuwkomers Academie
-</title>
-
-<head>
-
-<style>
-        .mySlides {display:none;}
-
-#sitem {width:1380px; height:6000px; top:0px; bottom:0px; right:auto; left:auto;}
-	 
-#tepe {background-color:white; width:1380px; height:47px; position:fixed; top:0px; bottom:0px; right:auto; left:auto; z-index:5;} 
-
-#title {font:bold 50px calibri light; color:rgb(195, 255, 0); position:fixed; margin-left:30px; top:60px; padding 0px; z-index:1;}
-#title2 {font:bold 10px ariel; color:orange; position:fixed; margin-left:30px; top:110px; padding 0px; z-index:3;}
-
-#logo {position:fixed; width:30px; height:30px; z-index:6; margin:1px; border:2px rgb(195, 255, 0);}
-#logo2 {position:absolute; top:130px; left:30px; width:100px; height:90px; z-index:4; border-radius:70%;}
-#kayan {position:relative; width:65%; height:380px; overflow:hidden; margin:45px 2px 0px 0px; float:left; z-index:1;}
-
-#editor {border:1px solid blue; text-align:center; font-family:calibri light; font-size:18px; position:relative; overflow:hidden; float:left;
-	width:34%; height:378px; margin:45px 2px 1px 1px;  padding:0px; line-height:1.2em; overflow-y:auto;}
-
-#demo {background-color:lightgreen; width:49%; height:40px;margin:2px 3px 3px 1px; padding-top:8px; text-align:center; position:relative; float:left; font-family:calibri light; font-size:20px; font-weight:bold; }
-#demo2 {background-color:yellow; width:49%; height:40px; margin:2px 1px 3px 8px; padding-top:8px; text-align:center; position:relative; float:left; font-family:calibri light; font-size:20px; font-weight:bold; }
-#overons {border:1px solid blue; position:relative; float:left; width:620px; height:280px; margin:2px; padding:10px; line-height:1.5em; overflow-y:auto;}
-
-#contact {background-color: black; color:white; font-family: Arial; border:1px solid blue; position:relative;  float:left; width:90%; height:100px; margin:2px; padding:60px; text-align:center; line-height:1.5em;}
-
-#filmtv {border:1px solid blue; position:relative;  float:left; width:620px; height:280px; margin:2px; padding:10px; line-height:1.5em; overflow-y:auto;}
-
-#Boeken {}
-
-#araba {position:relative; width:1380px; height:380px; overflow:hidden; margin:1px;z-index:1;}
-
-#ehliyet {background-color: white; padding:50px 10px 100px 20px; position:relative; font-family:calibri light; font-size:18px;
-	float:left; width:800px; height:700px; margin:1px 298px; text-align:justify; line-height:1.5em;z-index:2;}
-
-#uzunbaslik {background-color: rgb(0, 10, 100); color:white; font-family: Arial; font-size:30px; position:relative;  float:left; 
-	width:1380px; height:40px; margin:30px 1px 1px 1px; text-align:center; line-height:20px;
-	padding-top: 40px;
-    	padding-right: 0px;
-    	padding-bottom: 20px;
-    	padding-left: 0px; }
-
-.menu { position:relative; width:140px; height:35px; padding:10px 0px 0px 0px; margin:1px; float:left; font-family:calibri light;
-	background-color:rgb(195, 255, 0); color:black; font-weight:bold; font-size:16px; text-align:center;} 
-
-.land {background-color:rgb(180,255,151); width:98%; height:100px; border-radius: 10px;}
- 
-.baslik { background-color:rgb(0, 10, 100); 
-    margin-top: 1px;
-    margin-right: 5px;
-    margin-bottom: 0px;
-    margin-left: 1px;
-width:32%; height:35px; position:relative;  float:left; border:2px rgb(0, 10, 100); font-family:sans-serif; color:white; font-weight:bold; font-size:20px; 
-    padding-top: 6px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 9px; }
-
-.altbaslik {background-color:rgb(195, 255, 0);}
-
-.list {border:1px solid blue; position:relative; margin:1px 6px 5px 1px; font-family:calibri light; text-align:left; float:left; width:31%; height:800px;   padding:10px;  line-height:1.5em; overflow-y:auto;}
-
-.haberfoto {position:relative; width:120px; height:80px; margin:5px; float:left;}	
-
-.parlak:hover {background-color:rgb(195, 255, 0);}
-
-</style></head>
-
-	
-
-<body>
-	
-	
-<div id="sitem">
- 
-    <div id="tepe">
-    <img id="logo" src="https://static.wixstatic.com/media/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.jpg/v1/fill/w_142,h_80,al_c,q_80,usm_0.66_1.00_0.01/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.webp";>   
-    <div class="menu"><a href="#Boeken"> Kitap/Boek  </a></div>
-    <div class="menu"><a href="#Tv">  Medya/Media  </a></div>
-    <div class="menu"> <a href="#Werk"> Is/Werk  </a></div>
-       <div class="menu"> <a href="#contact">Contact  </a></div>	 
-	 <div class="menu"><a href="#uzunbaslik">Auto </div>
-	 <div class="menu"> <a href="#sitem">Home</a></div>
-      </div>
-
-
- <img id="logo2" src="https://static.wixstatic.com/media/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.jpg/v1/fill/w_142,h_80,al_c,q_80,usm_0.66_1.00_0.01/60fa59_f04a7d7825bf49f7aea70435dcde8295~mv2.webp";>
-
-  	<div id="kayan">
-	  	<div class="w3-content w3-section" style="max-width:1000px; height: 600px">
-             		<img class="mySlides" src="https://farm8.staticflickr.com/7577/15669754936_9cccc4def4_z.jpg" style="width:100%;height:330px;>
-		     	<img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o3.jpg" style="width:100%;height:330px;">
-             		<img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o6.jpg" style="width:100%;height:330px;">
-             		<img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o1.jpg" style="width:100%;height:330px;">
-	     		<img class="mySlides" src="http://resimdiyari.com/_data/i/upload/2012/10/14/20121014182832-c7880087-me.jpg" style="width:100%;height:330px;">														 
-       		 </div>
-        </div>  
-  	<div><a id="title"> Nieuwkomers Academie</a></div>
-        <div><a id="title2"> Een Platform voor Nieuwkomers in Nederland </a> </div>
-</div>
-	    
- <div id="editor">
-
-	
-<script>
-var myIndex = 0;
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="A Pen for HYF">
+    <meta name="keyword" content="vluchteling, crisis, inburgering, integratie">
+    <meta name="author" content="Necdet Ozdemir">
+    <title>Perspektief</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1> Nieuwkomer's </h1>
+      <h2> Perspektief </h2> <!--header-->
+      <div id="menu"> <!--navigation menu options-->
+        <div id="innermenu">
+          <div class="menu-item"><a href="#Home">Home </a></div>
+          <div class="menu-item"><a href="#Nieuws">Nieuws</a></div>
+          <div class="menu-item"><a href="#columns">Columns</a></div>
+          <div class="menu-item"><a href="#tip">Tips&Tops</a></div>
+          <div class="menu-item"><a href="#Overons">Over Ons</a></div>
+        </div>
+      </div> <!--end of navigation menu-->
+      <img id="logo" src="https://www.dpstalen.nl/wp-content/uploads/2018/04/Nederlands-is-nergens-voor-nodig.png">
+      <img id="logo-letters" src="https://i.pinimg.com/236x/b3/5e/44/b35e4424daef66339a37a5c484f369de.jpg">
+    </header> <!--end of fixed header-->
+    <main>
+      <section id="Home" class="container">
+        <p class="subtitel">Voor Pagina</p>
+        <div id="container1">
+		<div class="w3-content w3-section">
+             <img class="mySlides" src="https://www.photofacts.nl/fotografie/foto/mp/reitdiephaven.jpeg">
+             <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o3.jpg">
+             <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o6.jpg">
+             <img class="mySlides" src="http://www.nomad.news/wp-content/uploads/2015/10/o1.jpg">
+			 <img class="mySlides" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/5e/e2/20161205-150832-largejpg.jpg?w=1000&h=600&s=1">
+			 <img class="mySlides" src="https://www.besttravelmonths.com/uploads/2018/05/beste-reistijd-nederland-1200x675.jpg">
+			 <img class="mySlides" src="https://img.theculturetrip.com/1440x807/wp-content/uploads/2017/11/rotterdam-680760_1920.jpg">
+		</div>
+    </div>
+	 <script>
+		 var myIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000); // Change image every 3 seconds
-}
-</script>
-		 
- 
-    
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+			}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}    
+	x[myIndex-1].style.display = "block";  
+	setTimeout(carousel, 4000); // Change image every 4 seconds
+	}
+	      </script>
+      </section> <!-- end of Home Page-->
 
+      <section id="Nieuws" class="container"> <!--News-->
+        <p class="subtitel">Aanbelovend Nieuws</p>
+        <div class="sub-container">
+          <div class="col3 col-small">
+            <div class="fotohub-n"><img class="newsfoto" src="https://images4.persgroep.net/rcs/FoWUeymzdwXEGeV9pdF8_Z5Lhsk/diocontent/135154568/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9" alt="duo.nl"></div>
+            <a href="https://duo.nl/zakelijk/inburgeren/nieuws/turkse-asielmigranten-kunnen-kiezen-voor-inburgeringsplicht.jsp">
+              www.duo.nl
+            </a>
+            <h4>Turkse Immigranten kunnen kiezen voor inburgeringsverplicht.</h4>
+            <p>Turkse asielmigranten kunnen met een formulier bij DUO aangeven dat ze inburgeringsplichtig willen worden. Daarna gelden alle rechten en plichten die horen bij de huidige inburgeringsplicht. Vrijstelling is dan niet meer mogelijk.</p>
+          </div>
+          <div class="col3 col-small">
+            <div class="fotohub-n"><img class="newsfoto" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/content-afbeeldingen/onderwerpen/coronavirus/tv-toespraak-mark-rutte.jpg" alt="ad.nl"></div>
+            <a href="https://www.nu.nl/coronavirus/6036411/grote-evenementen-en-profvoetbal-in-brabant-komende-week-afgelast-vanwege-coronavirus.html">
+             AD.NL
+            </a>
+            <h4> Lees hier de toespraak van Rutte terug. </h4>
+            <p>In zijn toespraak tot het volk heeft premier Mark Rutte alle Nederlanders opgeroepen om alert te blijven, aanwijzingen van de overheid op te volgen én een beetje op elkaar te letten."Samen komen we deze moeilijke periode te boven."</p>
+          </div>
+          <div class="col3 col-small">
+            <div class="fotohub-n"><img class="newsfoto" src="https://slachtofferwijzer.nl/wp-content/uploads/2019/06/nationale-ombudsman-01-300x217.jpg" alt="Parool"></div>
+            <a href="https://www.parool.nl/nederland/ombudsman-wil-betere-voorzieningen-voor-mensen-die-wachten-op-asielaanvraag~b9c05ad8/">
+              Het Parool
+            </a>
+            <h4> Ombudsman wil betere voorzieningen voor mensen die wachten op asielaanvraag. </h4>
+            <p>De Nationale ombudsman en de Kinderombudsman roepen staatssecretaris Ankie Broekers-Knol (Justitie en Veiligheid) in een brief op de lange wachttijden voor asielaanvragen terug te dringen.</p>
+          </div>
+        </div>
+      </section> <!--End of News-->
 
- <div style="clear:left;">
-	 	<p id="demo"></p>
-		<script>
-		var d = new Date();
-		document.getElementById("demo").innerHTML ="Vandaag: "+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear()+"    Tijd:     "+d.getHours()+":"+d.getMinutes();
-		</script>
-   <p id="demo2"><a href="https://www.bnr.nl/player/live">Luister Radio BNR </a></p>
-   <h3 class="baslik" >Haberler/nieuws </h3>
-   <h4 class="baslik" >Egitim/Onderwijs </h4>
-   <h5 class="baslik" >Lisan/Taal</h5>
- </div>
- 
- 
- <ul class="list" >
-		 
-    <li class="land"> <img class="haberfoto" src="http://www.ikleerinbeelden.nl/wordpress/wp-content/uploads/signaalwoorden.jpg"> 
-   <a href="https://nicolaasferro.github.io/windmolencollege/Signaal%20Woorden.pdf">
-   <strong>Signaal woorden zijn hier </strong> </a><br> Meer dan 100 signaal woorden met zinnen in het Nederlands en Engels.</li><br>		 
-		 
-   <li class="land"> <img class="haberfoto" src="https://images2.persgroep.net/rcs/BzDXleBHglYw7RVIGsIcxv70V10/diocontent/151239599/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8"> 
-   <a href="https://www.trouw.nl/sport/het-ging-niet-makkelijk-maar-nederland-wint-opnieuw~b6339efb/?referer=https%3A%2F%2Fwww.google.com%2F">
-   <strong>TROUW/25.06.2019/WK voetbal </strong> <br>Het ging niet makkelijk, maar Nederland wint opnieuw.</a></li><br>
-		 
-   <li class="land"> <img class="haberfoto" src="https://nos.nl/data/image/2018/07/05/484558/1600x900.jpg"> 
-   <a href="https://nos.nl/artikel/2259984-kabinet-bekijkt-verplichte-inburgering-voor-turkse-nieuwkomers.html">
-   <strong>NOS/25.06.2019 </strong> <br>Kabinet is 'hoopvol' over inburgeringsplicht Turken.</a></li><br>	
-
-   <li class="land"> <img class="haberfoto" src="https://bnr-external-prod.imgix.net/archive/10040667_makeitwork.jpg?auto=format%252ccompress&q=45&cs=tinysrgb&w=1280"> 
-   <a href="https://www.bnr.nl/nieuws/arbeidsmarkt/10046076/tekort-aan-ict-ers-aangepakt-door-omscholing">
-   <strong>BNR /TEKORT AAN ICT'ERS </strong> <br>In Amsterdam start een project om het tekort aan ICT'ers aan te pakken. Het project, genaamd Make IT Work. </a></li><br>	
-			 
-   <li class="land"> <img class="haberfoto" src="https://platform-duic.imgix.net/app/uploads/sites/2/2019/05/Advertorial-DUIC-beeld.jpg?auto=format%2Ccompress&ch=Width%2CDPR%2CSave-Data&dpr=1&fit=max&h=750&ixlib=php-1.2.1&q=80&w=9999"> 
-   <a href="https://www.duic.nl/advertorial/samen-sterk-voor-vluchtelingen-wereldwijd/">
-   <strong>Servicepagina Vrienden van DUIC </strong> <br> Op 15 juni lopen duizenden mensen de Nacht van de Vluchteling, om geld in te zamelen voor vluchtelingen wereldwijd.</a></li><br>	
-	
-   <li class="land"> <img class="haberfoto" src="https://www.iamexpat.nl/sites/default/files/styles/article--full/public/staatsexamen-nt2.jpg?itok=fIwTfqs5"> 
-   <a href="https://www.staatsexamensnt2.nl/nieuws/20190325/aanmelden-voor-de-staatsexamens?regime=hflinks">
-   <strong>Staatsexamens Nt2 </strong> <br>Vanaf morgen, 26 maart 2019, is het voor nieuwe kandidaten mogelijk om aan te melden.  </a></li><br>	
-		 
-   <li class="land"> <img class="haberfoto" src="https://www.rtlnieuws.nl/sites/default/files/2018-11/yesim_candan.png"> 
-   <a href="https://www.rtlnieuws.nl/columns/column/4649131/gokmen-terrorist-aanslag-utrecht-istanbul-column">
-   <strong>RTL Nieuws</strong> <br>De afdruk van de Turkse terrorist </a></li><br>
-	 
-   <li class="land"> <img class="haberfoto" src="https://www.rtlnieuws.nl/sites/default/files/styles/liggend/public/content/images/archive/e3/uwv-wijst-op-regels-voor-bijverdienen.jpg?itok=InhIkxE4"> 
-   <a href="https://uwvmagazine.uwv.nl/sites/default/files/downloads/pdf/uwv_magazine_1_2019_1.pdf">
-   <strong> UWV-Magazine: </strong> <br>Succes Verhalen van Vluchtelingen </a></li><br>
-	 
-	 
-    <li class="land"> <img class="haberfoto" src="https://images0.persgroep.net/rcs/5H3tbg2bM2JgonSk8i5em0vlppU/diocontent/140908839/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9"> 
-   <a href="https://www.ad.nl/binnenland/staatsexamen-uitgesteld-inburgeraars-snakken-naar-test~a4eb2e3b/">
-   <strong> AD : </strong> <br>Staatsexamen uitgesteld: inburgeraars snakken naar test </a></li><br>
-   
-   <li class="land"><img class="haberfoto" src="https://nos.nl/data/image/2018/10/17/506860/xxl.jpg"> <a href="https://nos.nl/artikel/2255192-examens-nederlands-als-tweede-taal-uitgesteld.html">
-   <strong> NOS </strong><br> Examens Nederlands als tweede taal uitgesteld. -- NOS </a></li><br>
-   
-   <li class="land"><img class="haberfoto" src="https://images0.persgroep.net/rcs/z0KM_8hCeue8Eh0b0ls15k1y_5U/diocontent/118515324/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8"> <a  href="https://www.volkskrant.nl/es-bf7caf1e"><strong> Volkskrant</strong><br> 
-	  Ombudsman: Inburgering geeft nieuwkomers een valse start in Nederland.   </a></li><br>
-  
-   <li class="land"><img class="haberfoto" src="https://images1.persgroep.net/rcs/p5eIEyVeUCpuPQzw5svewL_bSvY/diocontent/125532058/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8"> <a href="https://www.volkskrant.nl/nieuws-achtergrond/migratiesaldo-in-nederland-bereikt-recordhoogte-een-plus-van-81-duizend-~b0cbd569/">
-   <strong> Volkskrant</strong><br>Migratiesaldo in Nederland bereikt recordhoogte: een plus van 81 duizend.  </li></a><br>
-	  </ul> 
-
-
-   <ul class="list">
-    <iframe width="450" height="280" src="https://www.youtube.com/embed/hes7RfuNqvU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-    
-  
-	<li class="land"> <img class="haberfoto" src="https://wiskundeacademie.nl/wp-content/uploads/2013/02/logoserie-WiskundeAcademie.png"> 
-   <a href="http://wiskundeacademie.nl">
-   <strong>WiskundeAcademie</strong> <br>Op deze site kunnen er de hele onderwerpen van wiskunde op middelbareschool worden gevonden.</a></li><br>
-	
-   <li class="land"> <img class="haberfoto" src="http://aardrijkskundepagina.nl/wp-content/uploads/2019/03/SchoolTV-e1552057855637.jpg"> 
-   <a href="https://schooltv.nl/">
-   <strong>Schooltv</strong> </a><br>Op deze site kunt u veel nuttige informatie betrekking tot schoolleven vinden.</li><br>
-		 
- <li class="land"> <img class="haberfoto" src="https://www.historischnieuwsblad.nl/upload/image/geschiedenis%20nederland.jpg"> 
-   <a href="https://www.entoen.nu">
-   <strong>Geschiedenis</strong> <br>Op deze site kunt u veel dingen over geschiedenis van Nederland leren.</a></li><br>
-		 
- <li class="land"> <img class="haberfoto" src="https://backend.uaf.nl/wp-content/uploads/2019/05/logo-standaard-RGB.svg"> 
-   <a href="https://www.uaf.nl/home/">
-   <strong>UAF</strong> <br>Het UAF ondersteunt hoogopgeleide vluchtelingen bij het realiseren van een passende maatschappelijke positie.</a></li><br>
-
-<li class="land"> <img class="haberfoto" src="https://www.idw.nl/files/bootstrap/images/idw-logo.png"> 
-   <a href="https://www.idw.nl/nl/diplomawaardering.html">
-<strong>IDW</strong> </a><br>U kunt via deze site uw diplomas laten waardeeren. Dat moet u doen om een opleiding te volgen. </li><br>				     
-
-				     <a class="altbaslik">NUTTIG VIDEOS EN DOCUMENTEN</a><br>	 
-	
-	 <li class="parlak"><a href="https://nicolaasferro.github.io/windmolencollege/onderwijssysteem-nederland.pdf">Onderwijssysteem in Nederland (pdf) </a> <br>
-	 <li class="parlak"><a href="https://www.khanacademy.org/">Khan Academy(English)</a><a href="https://nl.khanacademy.org/">(Nederlands)</a></br>
-	
-  </ul>
-
-
-<ul class="list" >
-   <a class="altbaslik">TAAL SITES</a><br> 
-         Asagidaki linklerde Hollandaca ogrenmenizde faydalanabileceginiz video ve siteleri bulabilirsiniz. <br>
-	 <li class="land"> <img class="haberfoto" src="https://i.ytimg.com/vi/CZnz9ozt6PU/maxresdefault.jpg"> 
-   <a href="https://www.youtube.com/watch?v=Tb3SaTv4clM">
-   <strong>Woord voor Woord </strong></a> <br> Hollandacaya baslarken mutlaka izlenmesi gereken 12 video.</li><br>
-		       
- 	<li class="land"> <img class="haberfoto" src="https://bookbox.com/wp-content/themes/book-box/book-box-assets/images/bookbox_logo_beta.png"> 
-   <a href="https://www.bookbox.com">
-   <strong>BookBox </strong>  </a><br> Sitedeki kisa hikayeleri dinleyerek, dinleme ve kelime hazinenizi gelistirebilirsiniz. Hikayeler farkli dillerde sunulmaktadir.</li><br>		      
-							
-	 <li class="land"> <img class="haberfoto" src="data:image/jpeg;base64,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"> 
-   <a href="https://www.learndutch.org/">
-   <strong>Learndutch.org</strong></a> <br> Sitede Bart de Pau tarafindan hazirlanmis ucretli ve ucretsiz videolar bulunuyor. Heb je zin serisi eglenceli ve ogretici. </li><br>	
-	
-	<li class="land"> <img class="haberfoto" src="http://virtueletraining.com/weblog/wp-content/uploads/2013/02/merve1.jpg"> 
-   <a href="http://virtueletraining.com/">
-   <strong> Virtuale Traning </strong> </a><br> Bu sitede 4 dil yetenegini gelistiren alistirmalar mevcut. Ozellikle spreken bolumu faydali.  </li><br>		      
-		
-	<li class="land"> <img class="haberfoto" src="data:image/png;base64,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"> 
-   <a href="https://www.netinnederland.nl/">
-   <strong> NetinNederland </strong></a> <br> Sitede zevkle izleyebileceginiz pekcok video var. Dinleme icin faydali ve Hollanda hakkindaki bilgiler var.  </li><br>		      
-				
-	<li class="land"> <img class="haberfoto" src="https://jeugdjournaal.nl/images/logos/npo-zapp-knop.png?1910220958"> 
-   <a href="https://jeugdjournaal.nl/">
-   <strong> NOS Jeugdjournaal </strong></a> <br> Sitede zevkle izleyebileceginiz pekcok video var. Dinleme icin faydali ve Hollanda hakkindaki bilgiler var. </li><br>		      
-	
-	<li class="land"> <img class="haberfoto" src="https://www.hetklokhuis.nl/bundles/klokhuispublicationbundle/images/logos/klokhuis-logo-4.png"> 
-   <a href="https://www.hetklokhuis.nl/">
-   <strong> Klockhuis </strong></a> <br> Sitede zevkle izleyebileceginiz pekcok video var. Dinleme icin faydali ve Hollanda hakkindaki bilgiler var. </li><br>		      
-	
-	<li class="land"> <img class="haberfoto" src="data:image/png;base64,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"> 
-   <a href="https://www.2doc.nl/">
-   <strong> Documentaries met Ondertitel</strong> </a><br> 2Doc.nl is dé website voor documentairefilms van de publieke omroep en biedt meer dan duizend documentaires van Nederlandse bodem en daarbuiten.</li><br>
-	
-	<li class="land"> <img class="haberfoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3IqfHMR4Xa5LLGQzCP54hJrGKkZZL9zzXSsUgbl-4DFxTx_Rs&s"> 
-   <a href="http://www.taalwinkel.nl/">
-   <strong>TaalWinkel</strong> </a> <br> Hét online taaladviespunt van HvA en UvA </li><br>
-	
-	<li class="land"> <img class="haberfoto" src="data:image/png;base64,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"> 
-   <a href="https://nt2taalmenu.nl/">
-   <strong>nt2taalmenu </strong> </a><br> De doel van de site is een bijdrage leveren aan gratis educatie voor iedereen, gratis lesmateriaal om zichzelf te kunnen ontwikkelen.</li><br>
-	
-	
-	 <li class="parlak"><a href="https://onzetaal.nl/"> Onze Taal </a> <br>						     
-	 <li class="parlak"><a href="https://oefenen.nl/"> Oefenen.nl </a> <br>
-	 <li class="parlak"><a href="https://www.npostart.nl"> NPO Start </a> <br>
-	 <li class="parlak"><a href="https://inburgeren.nl/examen-doen/oefenen.jsp"> Inburgering Examen</a><br>
-	 <li class="parlak"><a href="https://www.staatsexamensnt2.nl/"> Staatsexamen </a><br>
-	 <li class="parlak"><a href="https://www.youtube.com/channel/UC19EYW_4OZ2muGugHgnfXFg"> Staatsexamens Nt2 YouTube </a><br>							      
-	 <li>Wij danken aan de eigenaars van websites en we kondigen aan dat wij geen inkomen krijgen.<br> 
- </ul>  
-
+      <section id="columns" class="container"> <!--Columns-->
+        <p class="subtitel">Columns</p>
+        <div class="sub-container">
+          <div class="col2 col-small"><!--1.Column-->
+            <div class="fotohub"> 
+              <a href="https://behorizon.org/kosovo-security-force-ksf/">
+                <img class="newsfoto" src="https://677373.smushcdn.com/1619779/wp-content/uploads/2017/07/kosovo_1.png?lossy=1&amp;strip=1&amp;webp=1" alt="Security in Kosovo">
+              </a>
+            </div>
+            <p> Question of Upgrading Security in Kosovo: Transformation of Kosovo Security Force (KSF)<p>
+            <p style="font-size:15px">by Nicolas Del Ferro | Jul 5, 2017 | Geopolitics & International Security, Research<p>
+            <p>In this article, I will analyze the attributes of actors and find out reasonable answers to the questions above. Who are the actors? First of all, the Q5 Countries, the main contributors to Kosovo war, have an important role on Kosovo’s fate. Besides them, Turkey, a regional actor and contributor to Kosovo war, has historical and cultural interests in Kosovo. On the other side, Russian Federation, historically the racial and religious supporter of Serbia, fosters deep concerns about the Western march through her area of interest.<p>
+          </div>
+          <div class="col2 col-small"><!--2.Column-->
+            <div class="fotohub">
+              <a href="https://www.scientias.nl/voor-wie-is-het-nieuwe-coronavirus-werkelijk-gevaarlijk-wetenschappers-zochten-het-uit/">
+                <img class="newsfoto" src="https://image.shutterstock.com/image-photo/sphygmomanometer-measuring-instrument-on-white-260nw-1328413166.jpg" alt="coronavirus">
+              </a>
+            </div>
+            <p>Voor wie is het coronovirus werkelijk gevaarlijk</p>
+            <p style="font-size:15px">Caroline Kraaijvanger | 10 maart 2020</p>
+            <p>De onderzoekers bogen zich over de gegevens van deze patiënten en hun ziekteverloop. En dat stelt ze in staat om enkele risicofactoren te identificeren. Onderzoeker Zhibo Liu: “Een hoge leeftijd, tekenen van bloedvergiftiging bij opname in het ziekenhuis en andere aandoeningen, zoals een hoge bloeddruk en diabetes en het langdurig gebruik van non-invasieve beademing (waarbij de patiënt zelf ademhaalt, maar via een masker dat over de neus en mond is geplaatst daarbij wel enigszins ondersteund wordt, red.) speelden een belangrijke rol bij patiënten die overleden.” </p>
+          </div>
+          <div class="col2 col-small"><!--3.Column-->
+            <div class="fotohub">
+              <a href="#Home">
+                <img class="newsfoto" src="https://images1.persgroep.net/rcs/N9nvzcXl_d_0bHJvilwwsbznv48/diocontent/108320776/_crop/0/0/4000/2668/_fitwidth/763?appId=2dc96dd3f167e919913d808324cbfeb2&quality=0.8" alt="vlugtelingen">
+              </a>
+            </div>
+            <p>Wat nog komen gaat? De Vluchtelingen</p>
+           <p style="font-size:15px">Necdet Ozdemir  | 15 februari 2020</p>
+          <p>De mensen en de leiders van Europa hoeven niet pessimistisch te zijn. Maar ze moeten opschieten om vluchtelingen goed te laten integreren en zorgen voor een goede kans voor de toekomstige intellectuelen met een andere afkomst. De wereld heeft weer behoefte aan de hulp van het oude continent. </p>
+          </div>
+          
+          <div class="col2 col-small"><!--4.Column-->
+            <div class="fotohub"> 
+              <img class="newsfoto" src="https://iaahbr.tmgrup.com.tr/287240/0/0/0/0/0/0?u=http://i.ahaber.com.tr/galeri/dunya/musulda-insanlik-drami-yasaniyor/2.jpg&mw=730" alt="toekomst">
+            </div>
+            <p>Wat nog komen gaat; Een betere toekomst voor de zeester.</p>
+           
+            <p style="font-size:15px">by Gaffari Oguz | 15 december 2019</p>
+            <p>Tegenwoordig verandert de wereld echt snel. Misschien gaan we in het toekomst gaan we in vliegende auto’s rijden of vechten landen voor hun grenzen die in het ruimte staan. Zelfs is het misschien mogelijk om het uiterlijk van God te bewijzen door wetenschappelijke berekeningen of misschien niet. Ik geef er eigenlijk niets om. Ik weet eigenlijk wat er daarna komt en ik ben ongeduldig. Ik ga me eraan wijden.<br>
+Er zijn veel mensen die lijden vanwege sommige andere mensen op de wereld. Door  machtsgevechten van groepen of mensen lijden de andere mensen. Ik heb ongelooflijk medelijden met mensen die lijden. Ik hoor de pijn van een Yezidi meisje die seksslaaf werd... Ik hoor de pijn van een klein Oeigoers kind dat van zijn familie werd weggehaald en werd gehersenspoeld in zwaarbewaakte kampen... ik hoor de pijn van een Jemenitisch kind dat sterft omdat hij geen schoon water of iets te eten kan vinden... ik hoor de pijn van een onschuldige Turkse mama die zonder reden in de gevangenis blijft met haar baby van 5 maanden. Al deze pijnen komen door de mensen die hun gedrag niet kunnen beheersen en mensen die kunnen niet opstaan tegen onrecht. <br>
+Als leraar wil ik mijn leerlingen helpen niet iemand te zijn door wie anderen lijden of degene die zich niet bewust is van het lijden van anderen. Ik wil dat ze zich kunnen inleven. Ik wil me eraan wijden. Dit verandert misschien de wereld niet, maar kan het leven van mijn leerlingen op een goede manier beïnvloeden. Net zoals in het zeesterverhaal maak ik misschien niet het verschil in het leven van iedereen, maar misschien kan ik voor een van hen het verschil maken.  Als je mij vraagt wat nog komen gaat; Er komt een betere toekomst voor deze zeester.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="tip" class="container"> <!-- Tips & Tops-->
+        <p class="subtitel">Tips & Tops </p>
+        <div class="sub-container">
+          <div class="col3 col-small">
+            <h4>HET ONDERWIJS </h4>
+            <iframe class="videoblok" src="https://www.youtube.com/embed/hes7RfuNqvU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="tip-box"> <!--Wiskunde-->
+              <img class="tipfoto" src="https://wiskundeacademie.nl/wp-content/uploads/2013/02/logoserie-WiskundeAcademie.png" alt="Academie">
+               <div style="float:right; margin:50px 80px 25px 0px"> <a href="https://wiskundeacademie.nl/">Wiskunde <br> Academie</a> </div>
+              <p>Op deze site kunnen er de hele onderwerpen van wiskunde op middelbareschool worden gevonden.</p>
+            </div>
+            
+            <div class="tip-box"> <!--IDW-->
+              <img class="tipfoto" src="https://www.idw.nl/files/bootstrap/images/idw-logo.png" alt="idw">
+              <p> 
+                <a class="" href="https://www.idw.nl/nl/diplomawaardering.html"> International Diploma Wardeering (IDW)</a>
+              </p>
+              <p>Via deze site kunt u uw diploma's gewaardeert hebben. Dat is nodig om een opleiding te volgen of een werk te vinden.</p>
+            </div>
+          </div><!-- End of Onderwijs Tip-->
+          <div class="col3 col-small"><!--Taal Tips-->
+            <h4>TAAL TIPS</h4>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://i.ytimg.com/vi/CZnz9ozt6PU/maxresdefault.jpg" alt="woord voor woord">
+              <a href="https://www.youtube.com/watch?v=Tb3SaTv4clM"> Woord voor woord </a>
+              <br>
+              <p>Very helpful videos for beginner dutch learners.</p>
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://www.dpstalen.nl/wp-content/uploads/2018/04/Nederlands-is-nergens-voor-nodig.png" alt="Taal">
+              <div style="float:right; margin:20px 30px 0px 10px"><a href="https://nt2taalmenu.nl/"> Nederlands <br>leren met <br> NT2TaalMenu</a></div>
+              <br>
+              <p> Wilt u Nederlands leren? Of oefenen voor het inburgeringsexamen? Of voor het Staatsexamen I of II? Dan is nt2taalmenu.nl dé website voor u! Er zijn oefeningen voor alle niveaus.</p>
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="http://virtueletraining.com/weblog/wp-content/uploads/2013/02/maxima.jpg" alt="virtuele traning">
+              <a href="http://virtueletraining.com/">Virtuele Traning</a>
+              <p>Dit is het portaal van Taalpraktijk NT2. Hier vind je gratis online oefeningen en uitleg.</p>              
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://www.hetklokhuis.nl/bundles/klokhuispublicationbundle/images/logos/klokhuis-logo-4.png">
+              <div style="float:right; margin:30px 80px 0px 10px"><a href="https://www.hetklokhuis.nl/">Klokhuis</a></div>
+              <p>Het Klokhuis is een informatief jeugdprogramma van de NTR dat iedere werkdag wordt uitgezonden om 18.40 uur op Zapp (NPO 3). Kinderen tussen de negen en twaalf jaar leren elke dag iets over de wereld om hen heen, in de breedste zin van het woord.</p>           
+            </div>
+          </div> <!--End of Taal Tips-->
+          
+          <div class="col3 col-small">
+            <h4>WERK TIPS</h4> <!--Werk Tips-->
+            <div class="tip-box">
+              <img class="tipfoto" src="https://nugevonden.nl/werk/wp-content/uploads/sites/15/2016/03/nationalevacaturebank.gif" alt="Nationale vacaturebank">
+              <div style="float:right; margin:30px 50px 0px 0px;"><a href="https://www.nationalevacaturebank.nl/">Nationale<br>vacaturebank</a></div>
+              <p>U kunt here veel vacatures vinden en solliciteren.</p>
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://lh3.googleusercontent.com/gUyHrmCpcy5rRMY68W5csIEj60ORJmoqvTr8_WWYL8bDv6hlnKeE_twq5Pw1Y4X3FzI" alt="Indeed">
+              <div style="float:right; margin:30px 100px 0px 0px"><a href="https://www.indeed.nl/"> Indeed </a></div>
+              <p>U kunt here veel vacatures vinden en solliciteren.</p>
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://media.nu.nl/m/d7qx712asylw_wd640.jpeg" alt="MEESTERBAAN">
+              <a href="https://www.meesterbaan.nl/">MEESTERBAAN</a>
+              <p>U kunt here bij onderwijs instelingen veel vacatures als docent, juf, meester vinden en solliciteren.</p>
+            </div>
+            <div class="tip-box">
+              <img class="tipfoto" src="https://www.beaks.nl/wp-content/uploads/2018/12/cropped-cropped-logo2018-2.png" alt="BEAKS">
+              <a href="https://www.beaks.nl/">BEAKS.NL</a>
+              <p>De wereld van solliciteren verandert in een razendsnel tempo. Beaks.nl biedt hulp en houvast bij de zoektocht naar een passende functie en geeft praktische en gratis tips om de kans op succes zo groot mogelijk te maken.</p>
+            </div>
+          </div> <!--End of Werktips-->
+        </div>
+        
+        </div>
+        
+      </section> <!--End of tips and tops-->
+      
+      <section id="Overons" class="container"> <!--Overons-->
+        <p class="subtitel">Over Ons</p>
+        <div id="sub-overons"><!--About us-->
+          <p>"De Andere Perspektief" is een apolitiek maar humanist media platform die gevoelig is aan de human crises overal in de wereld. Onze doel is het aantonen dat er altijd gevarierde aanpaken en meningen kunnen zijn tegen de problemen en gebeurtenissen. Mensen moeten wederzijds aan elkaar respect aantonen. Hierbij vinden wij de woorden van Comenius (1592-1670) erg betekenisvol.</p>
+          <p style="font-style:italic"><mark>“Wij zijn allen burgers van één wereld.</mark> Een mens haten, omdat hij elders is geboren, omdat hij een andere taal spreekt, omdat hij anders over dingen denkt, omdat hij minder of meer dan jij weet, wat een onbegrip! Want wij zijn allen mensen en dus niet volmaakt. Wij hebben allemaal behoefte aan hulp. Niemand is zonder verplichtingen jegens anderen.”</p>
+        </div> <!--End of About us-->
+        <div style="width:70%; margin:50px auto 100px auto;">
+          <p>Hier is onze auteur team.</p>
+          <table border="3px">
+            <thead>
+              <tr height="40" background-color="gray">
+                <th width="150">Naam</th>
+                <th width="80">Status</th>
+                <th width="200">Onderwerp</th>
+                <th width="450">Artikels</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr height="50" padding-left="5px">
+                <td>Necdet Özdemir</td>
+                <td>Rezident</td>
+                <td>Crisis</td>
+                <td>Wat nog komen gaat? De Vluchtelingen</td>
+              </tr>
+              <tr height="50">
+                <td>Nicolaas Ferro</td>
+                <td>Gast</td>
+                <td>Balkans</td>
+                <td>Question of Upgrading Security in Kosovo</td>
+              </tr>
+              <tr height="50">
+                <td>Gaffari Oguz</td>
+                <td>Rezident</td>
+                <td>Holocausten</td>
+                <td>Wat nog komen gaat; Een betere toekomst voor de zeester.</td>
+              </tr>
+              <tr>
+                <td>Caroline Kraaijvanger </td>
+                <td>Gast</td>
+                <td>Gezondheid</td>
+                <td>Voor wie is het coronovirus werkelijk gevaarlijk</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section> <!--End of Overons-->
+      <section>
+	 <div class="fotoblok">
+          <div class="toptitle">
+            <p>Wat nog komen gaat?</p>
+            <p>De Vluchtelingen</p>
+          </div>
+          <img id="topfoto" src="https://images1.persgroep.net/rcs/N9nvzcXl_d_0bHJvilwwsbznv48/diocontent/108320776/_crop/0/0/4000/2668/_fitwidth/763?appId=2dc96dd3f167e919913d808324cbfeb2&quality=0.8" alt="header-image">
+        </div> <!--end of fotoblok-->
+        <div class="artikelcel">
+          <p>In de jaren 90 was de wereld getuige van de instorting van de Sovjet Unie. Sommige geleerden dachten dat er zowel de einde aan de geschiedenis als een einde aan totalitaire regimes kwam, want ze verwachtten vanaf dat moment geen oorloog. Maar het ging niet zomaar, integendeel, er werden oorlogen in Irak en Afghanistan. Onlangs volgden de Arabische Lente en oorlogen in Oekraïne, Syrië, Yemen enzovoort.</p>
+          <p>De laatste drie oorlogen inclusief de gebeurtenissen in Turkije zijn een aanwijzing voor een grote strijd tussen supermachten. Maar in ieder geval lijdt Europa aan de effecten van deze oorlogen en aan de ellendige toestand die ze creëren. Want ten gevolge van deze slechte toestand immigreren veel vluchtelingen naar westerse landen om een veilig onderdak te vinden. Vanzelfsprekend zijn de meest gekozen bestemmingen de West-Europese landen. Deze mensen kwamen naar deze landen zonder wat ze vroeger hadden. Hun bezittingen, banen, vrienden en herinneringen.  In de nieuwe landen zijn hun talen, hun diploma’s, hun rijbewijs niet meer geldig. Ze moeten opnieuw met leven beginnen en integreren in een nieuw leefmilieu.</p>
+          <p>Maar er wachten hen andere uitdagingen. Namelijk de toenemende ergernis tegen allochtonen onder de westerse landen. De recente terreuraanvallen op de verschillende plekken in Europa spelen een activerende rol in zulke ideeën. Vandaar dat de vluchtelingen die al in het slechte toestand zijn, soms alsof schuldig behandeld worden.</p>
+          <p>Met deze situatie kunnen de Europese regeringen een belangrijke rol spelen. Deze vluchtelingen moeten niet als last maar een als culturele welvaart worden gezien. Europa heeft weliswaar geen strategische plaatsen gewonnen in de globale machtsstrijd, maar veel mensen van verschillende kleuren gewonnen. In de toekomst is de bevolking belangrijker dan de aarde. Indien Europa deze vluchtelingen goed kan laten integreren, wint zij een belangrijke culturele rijkdom. Tegenwoordig kan ik veel talen horen ook in een kleine stad in Nederland van Arabisch tot Vietnamees, van Swahili tot Tibetaans. Het is een kans voor Europa om de toekomstige intellectuele mensen die de hele wereld kunnen leiden op te voeden.</p>
+          <div id="highlight">
+          Europa heeft weliswaar geen strategische plaatsen gewonnen in de globale machtsstrijd, maar veel mensen van verschillende kleuren gewonnen. In de toekomst is de bevolking belangrijker dan de aarde.
+          </div>
+          <p> Natuurlijk heeft Europa een grens qua bevolkingscapaciteit en zij kan niet iedereen opvangen als vluchteling. Maar het laten zinken van vluchtelingenboten op de zee is niet de juiste manier om de vluchtelingstroom te stoppen. Als een effectiever actie <b>kan Europa een actievere rol spelen om de wereldwijde crisis te voorkomen.</b> Hoe dan? Dat is een andere discussie.</p>
+          <p>Kortom, de mensen en de leiders van Europa hoeven niet pessimistisch te zijn. Maar ze moeten opschieten om vluchtelingen goed te laten integreren en zorgen voor een goede kans voor de toekomstige intellectuelen met een andere afkomst. De wereld heeft weer behoefte aan de hulp van het oude continent.</p>
+          <p>Necdet Özdemir  | 15 februari 2020</p>
+        </div>     
+      <section>
+    </main>
+    <footer>
+      <p align="center">Nieuwkomer's Perspektief</p>
+      <hr />
+      <div class="footer-sub">
+         <p>Menu</p> 
+         <ul id="deco-non" style="list-style:none; line-height:35px;">
+           <li><a href="#Home">Home</a></li>
+           <li><a href="#Nieuws">Nieuws</a></li>
+           <li><a href="#Columns">Columns</a></li>
+           <li><a href="#tip">Tips&Tops</a></li>
+           <li><a href="#Overons">Over Ons</a></li>
+        </ul>
+       </div>
      
- <div>    
-<h5 class="baslik" id="Boek" >WM Bibliotheek</h5>
-<h6 class="baslik" id="Tv">WM TV&Bioscoop</h6>
-<h7 class="baslik" id="Werk">WM Werk&Leven&ICT </h7>		
- </div>   
-     
-  <p id="Boeken" class="list"><strong class="altbaslik"> BOEKEN </strong> <br> 
-	  <a class="parlak" href="http://www.debestseller60.nl/">  Kijk ook Nederlands bestseller lijt! </a> <br>
-	  <strong> BOEK SAMENVATTING//KONING VAN KATOREN </strong> <br>
-Op de avond dat de koning van Katoren overlijdt wordt er een jongetje geboren: Stach. De dag na zijn geboorte valt zijn vader uit de vlaggenmast en overlijdt ook. Zijn moeder schrikt hier zo van dat zij de kraamvrouwenkoorts niet overleeft. Vanaf nu zal de oom van Stach (Gervaas) voor hem gaan zorgen. Er werd geen nieuwe koning benoemd. En op een avond droomde Gervaas dat Stach de koning van Katoren was.
+      <div class="footer-sub">
+        <p>Contact met ons</p>
+        <ul style="list-style:none; line-height:35px;">
+          <li><i class="far fa-envelope"></i> ferronicolaas@gmail.com</li>
+          <li><i class="fas fa-mobile-alt"></i> +31612345678</li>
+          <li><i class="fab fa-twitter-square"></i> @perspektif</li>
+          <li><i class="fab fa-facebook-square"></i> @perspektif</li>
+          <li><i class="fab fa-youtube"></i>Perspektif
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
 
-Gervaas haalde Stach over om aan de ministers te vragen wat je moest doen om koning van Katoren te worden. Het antwoord hierop was dat hij 7 opdrachten moest vervullen. Als dat hem niet lukte zou dat zijn dood betekenen. Stach ging hiermee akkoord. Hij kreeg zijn eerste opdracht: maak een eind aan het geschreeuw van de vogels van Decibel. Stach had nog nooit van die vogels gehoord. Hij ging met volle moed op weg.
-Zodra hij aankwam in het stadje vroeg hij de weg, maar niemand hoorde hem. Ze hadden ook nog rare kleppen op. Haastig roept een vrouw hem binnen. Ze legt uit dat de vogels van Decibel zo'n ontzettend lawaai maken dat je doof kan worden van hun geschreeuw. Zij geeft Stach ook een paar oorkleppen. 
-De burgemeester van Decibel legt alles uit over de vogels van Decibel. Na een aantal dagen is Stach al een heleboel te weet gekomen. Hij heeft ook een idee. Hij koopt een toongenerator met extra grote luidsprekers. Zodra de vogels boven het stadje vliegen zet hij de toongenerator aan. De vogels probeerden boven het geluid van het apparaat uit te komen. Telkens zet Stach het apparaat op een hogere toon. Tot dat de stembanden van alle beestjes zijn geknapt. Ze konden geen geluid meer maken. 
-Het was feest in Decibel. Stachs eerste opdracht was geslaagd.
-Opdracht twee was: hak in Wapenfelt de granaatappelboom om. In de trein naar Wapenfelt komt Stach de dochter van de burgemeester tegen: Kim. Zij vertelt alles over de granaatappelboom. Aan de boom groeien in plaats van appels granaten. Als die granaten van de boom op de grond vallen geeft dat een daverende explosie. 
-Stach wordt tijdens een bezoekje aan de granaatappelboom door een granaat geraakt. Hij moet in bed blijven om te genezen. In bed bedenkt Stach een plan. Hij zorgt ervoor dat de kruitfabriek (die bij de granaatappelboom in de buurt staat) stopt met het produceren van kruit. Omdat er dan geen gevaarlijke stoffen (kruit) uit de schoorsteen van de fabriek de lucht in verdwijnt groeien er weer gewone appels aan de boom. Zo kon de boom worden omgehakt. 
-Opdracht twee was ook geslaagd. En Stach had een nieuw vriendinnetje: Kim. Ze beloven contact te houden.</p>
-  
-     <p class="list"><strong class="altbaslik"> FILMS EN TV PROGRAMMAS </strong> <br> 
-	<Strong> DE FILMS DIE IK RAAD U AAN TE KIJKEN  </strong><br>
-	 Bankier van het Verzet (2018)<br>
-	 De Storm (2009)<br>
-	 Sonny Boy (2001)<br>				      
-	 The 13th Warrior (1999) <br>
-	 Jakob the Liar (1999)<br>
-	 Enemy of the State (1998) <br>
-	 Schindler's List (1993) <br>
-	 The Zookeeper's Wife (2017) <br>
-	 12 Angry Men (1957) <br>
-	 Life is beautiful (1998) <br>
-	 The Last Knights (2015) <br>
-	 Blood Diamond (2006) <br> AUB, mail mij de namen van films die u houden van. Dus ik kan de lijst vergroten.<br>
- <strong>TV PROGRAMMA'S: <br> Zondag met Lubach. <br> Wie is de Mol? </strong>	  
-Het format is aan meer dan vijftig landen verkocht, waaronder Nederland ook besond. 
-Het programma draait om een spel, waarbij de kandidaten moeten samenwerken om geld voor een pot te verdienen. Een van hen is de mol, degene die het spel in het geheim saboteert. De winnaar krijgt de pot.
-De kandidaten reizen naar het buitenland, waar ze allerlei opdrachten moeten uitvoeren. Deze bestemmingen wisselen per seizoen.
-Na elke ronde (elke twee/drie dagen) krijgen de kandidaten via een laptop twintig vragen (in de finale veertig vragen) over de identiteit van de mol. De laatste vraag van deze test is altijd "Wie is de Mol?", waarbij de kandidaten moeten aangeven wie ze denken dat de mol is. Degene die de minste goede antwoorden geeft (rood scherm), ligt uit het spel en gaat direct naar huis. 
-Uiteindelijk blijven er drie kandidaten in de finale over. Een wint, een verliest en de derde is de mol. De kandidaat die in de finale de test het beste maakt, wint Wie is de Mol? en daarmee de pot met het geld.
-	</p>
-
-<div><ul class="list" >
-		
- <strong class="altbaslik"> ICT Fans Hier! </strong> <br> 
-   
-   <li class="land"> <img class="haberfoto" src="https://www.it-omscholing.nl/files/logo.png"> 
-   <a href="https://www.it-omscholing.nl/nl/"> 
-   <strong> Make IT Work </strong> 
-   <br> Bij deze traject biedt HvA een intensief omscholing aan de kanditaten om een baan bij een ICT bedrijf te krijgen.</a></li><br>		  
-	
-   <li class="land"> <img class="haberfoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzp9XFbpRzPlk4W-3SD0f3bZNkTVUiYcNLaQbY_GrMxnxldSZ&s"> 
-   <a href="http://hackyourfuture.net/"> 
-   <strong> Hack Your Future </strong> 
-   <br> Egitimli multecilere ICT sektorunde is bulabilmeleri icin 6 ay sureli ICT kursu vermektedir.</a></li><br>				     
-			   
- 											       
-	<a class="parlak" href="https://www.w3schools.com/html/"> w3schools </a><br>
-	<a class="parlak" href="https://www.codecademy.com/"> CodeAcademy </a><br>
-	<a class="parlak" href="https://www.freecodecamp.org/">FreeCodeCamp </a><br>
-	
-<strong class="altbaslik">WERK ZOEKEN </strong> <br> 
-	<a href="https://refugeestartforce.eu/"> *** Refugee Start Force </a><br>		 
-	<a class="parlak" href="https://www.indeed.nl/">Indeed: Vacatures zoeken</a><br>
-	<a class="parlak" href="https://www.werk.nl/werk_nl/werknemer/home">Werk.nl</a><br>
- <strong class="altbaslik"> Overige </strong> <br>									   
-	<a class="parlak" href="https://vizebasvurumerkezi.com/hollanda/"> Hollanda da Vize Islemleri </a><br>
-	<a class="parlak" href="https://whichmuseum.nl/nederland/beste-musea"> Beste 100 Musea in Nederland! </a><br>	
-
-</div>		 
-	<div>
-	<div><h10 id="uzunbaslik"><br>Het Rijden in Nederland </h10></div>
-        <div id="araba"><img style="width:1400px; height:auto;" src="https://welingelicht-welingelichtekri.netdna-ssl.com/wp-content/uploads/2018/07/HH-77859332-750x480.jpg"> 
-	</div>
-	<div><p id="ehliyet"> 
-  <strong class="altbaslik">Hollanda’da Ehliyet Almak* </strong><br>
-(*The Text is writen in Turkish/De tekst is geschreven in het Turks)<br>
-AB üyesi ülkelerinden alınmış ehliyeti olanlar, ehliyetlerini doğrudan  Hollanda ehliyeti ile değiştirebilirler. Diğer ülkelerden alınan ehliyetler sadece 185 gün geçerli. Bu süre, Hollanda’da sürekli ikamet etmeye basladığınız tarihten itibaren başlıyor.
-Ehliyet sınavlarını Hollanda’da CBR adı verilen bir kuruluş yapıyor. Teori ve pratik olmak üzere iki sınav var. 
-Teori sınavına CBR sitesinden şahsen basvurulabiliyor. Hollandaca sınav 31,5 Euro. Sınava İngilizce de (37 Euro ) girebilirsiniz. Ya da Türkçe tercümanla da girebilirsiniz. Ancak tercüman 200-250 Euro civarında.. Sınava bir kurs araciliğla hazırlanabileceginiz gibi, kendiniz de calışabilirsiniz. Ancak iyi çalısmak gerekli. Zira sınav zor, birçok kişi, ikinci yada üçüncü hakkında geçebiliyor. Kütüphaneden yada internetten siparişle bir kitap temin edebilirsiniz. Ayrıca internette teori dersleri ve soruları bulmak mümkün. Sinav iki bölümden oluşuyor. Birinci bölümde 25 soru var ve en az 15 doğru yapmanız gerekiyor. Bu bolümde trafik akışı içerisinde sürücü mahvilinden görülen farklı durumlarda göstereceğiniz tepki ölçülüyor. “Frene bas”, Gazı serbest bırak” yada “Oldugun gibi devam et” şeklinde üç seçenek sunuluyor. 
-Özellikle ikinci bölüm daha zor. Tamamen teoriden oluşan bu bölümde 40 soru var. 35 net çıkartmak gerekli. 
-İkinci sınav olan uygulama (praktijk) sınavından önce, <a class="land" href="https://www.cbr.nl/nl.htm">CBR sitesinden</a> DIGID numaranızla oturum açıp, sağlık formu doldurmanız gerekli. Bir rahatsızlığınız yoksa, buradaki sorulara hayır cevabı vereceksiniz. Bu önemli. Bundan sonra anlaştığınız kursa, bu oturum hesabınızdan yetki (Machtiging) vereceksiniz. Sınav tarihinizi kurs hocanız alabiliyor. Sınav ücreti  102 Euro, kursun aldığı ücretle beraber 250 Euroyu buluyor. Bu sınava da Türkçe tercümanla girilebiliyor. Tabiki maliyeti daha yüksek.
-<br> Nelere dikkat etmeli:<br>
-Hollanda’da bisiklet trafiği yoğun oldugu için dönüslerde ve kavsaklarda bisiklet yollarinin kontrolü baş saga veya sola döndürülerek yapilmali, sadece gozle degil. Yoksa elenirsiniz. Ayrica Hollanda’daki yol ceşitleri iyi ögrenilmeli. 30 km lik yollarda kavşaklar eşit önceliklidir, yani sağdan gelen trafiğe öncelik vermek gerekiyor. Ayrıca Hollanda’da sürücülerden, trafiği sürekli açık bırakacak şekilde seri araç kullanılmasi ve hız limitlerinin iyi kullanılması bekleniyor. İlave olarak, burada yol üzerinde yönlendirme okları çizilmiş. İzi doğru takip etmezseniz farklı yönlere girmek zorunda kalırsınız. Bunlar gibi geldiğiniz ülkelere kıyasla daha birçok farklılık var. Bunları kurs hocanız anlatacaktır. 
-Sınavı geçince, CBR, belediyenize bir yazı gönderiyor. Ehliyetinizi almak için belediyenize başvuruyorsunuz. Bir hafta içinde teslim ediliyor.
-Kolay gelsin.<br>
-Araba alımı konusuda bilgiler yakında geliyor.
-     </p> </div><div>   
-     
- <div><p id="contact"> 
-Contact: <br>ferronicolaas@gmail.com <br> Wij verwachten graag uw contributies en tips. </p>  </div>
-    
- </div>
-</body> 
